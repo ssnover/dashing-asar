@@ -1,0 +1,14 @@
+<package format="2">
+
+    <name>image_capture</name>
+    <version>0.1.0</version>
+    <description>
+        Package which takes images and publishes them to the system.
+    </description>
+    <maintainer email="TODO@gmail.com">TODO</maintainer>
+    <license>MIT</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <build_depend>roscpp</build_depend>
+
+</package>
