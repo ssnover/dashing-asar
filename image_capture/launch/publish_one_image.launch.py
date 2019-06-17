@@ -13,9 +13,4 @@ def generate_launch_description():
         package='image_capture', node_executable='image_publisher', output='screen')
     return launch.LaunchDescription([
         publisher,
-        launch.actions.RegisterEventHandler(
-            event_handler=launch.event_handlers.OnProcessExit(
-                target_action=publisher,
-                on_exit=[launch.actions.EmitEvent(event=launch.events.Shutdown())],
-            )),
     ])
